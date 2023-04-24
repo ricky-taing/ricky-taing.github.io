@@ -3,6 +3,24 @@
     <head>
         <title>Ricky's Blog</title>
         <link rel="icon" type="image/x-icon" href="./images/favicon-large.ico">
+        <script>
+            isJapanese = true;
+            function changeLang() {
+                if (isJapanese) {
+                    document.getElementById("blogName").innerHTML = "Ricky's Blog";
+                    document.getElementById("langBtn").innerHTML = "Change to Japanese";
+                    isJapanese = false;
+                } else {
+                    document.getElementById("blogName").innerHTML = "リッキーの Blog";
+                    document.getElementById("langBtn").innerHTML = "Change to English";
+                    isJapanese = true;
+                }
+            }
+
+            function returnTop() {
+
+            }
+        </script>
         <style>
             body {
                 background-image: url('./images/aokoaozaki.webp');
@@ -35,7 +53,7 @@
         </style>
     </head>
     <body>
-        <h1>リッキーの Blog</h1>
+        <h1 id="blogName">リッキーの Blog</h1>
         <img src="./images/houtaro-oreki.jpg" alt="houtaro oreki pfp" style="width:225px;height:192px;">
 
         <h2>Photography</h2>
@@ -44,6 +62,7 @@
 
         <h2>Anime</h2>
         <p>Check out what anime I've watched here:</p>
+        <!-- <iframe src="https://myanimelist.net/profile/Tengu201" title="myanimelist page"></iframe> -->
         <a href="https://myanimelist.net/profile/Tengu201" target="_blank">MyAnimeList</a>  <br>
         <p>Currently watching:</p>
         <ol>
@@ -70,5 +89,9 @@
         </table>
         <p>Referencing image from another website:</p>
         <img src="https://media.tenor.com/uukuabu4NKoAAAAd/yasuo-league-of-legends.gif">
+        <button id="langBtn" onclick="changeLang()">Change to English</button>
+        <button>
+            <a href="#blogName">Return to the top</a>
+        </button>
     </body>
 </html>
