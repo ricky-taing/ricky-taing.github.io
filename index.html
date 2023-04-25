@@ -28,6 +28,8 @@
                 border:1px solid white;
             }
         </style>
+        <!-- script src grabbed from w3schools -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     </head>
     <body>
         <h1>リッキーの Blog</h1>
@@ -57,5 +59,9 @@
         </table>
         <p>Referencing image from another website:</p>
         <img src="https://media.tenor.com/uukuabu4NKoAAAAd/yasuo-league-of-legends.gif">
+        <div ng-app>
+            <input type="text" ng-model="dynamicText"></input>
+            <p ng-bind="dynamicText"></p>
+        </div>
     </body>
 </html>
