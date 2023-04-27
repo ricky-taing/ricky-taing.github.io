@@ -28,10 +28,20 @@
                 border:1px solid white;
             }
         </style>
-        <!-- script src grabbed from w3schools -->
+        <!-- src grabbed from w3schools -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="./myApp.js"></script>
+        <script src="./myCtrl.js"></script>
     </head>
     <body>
+    <!-- <div ng-app="testApp" ng-controller="testCtrl" ng-init="color='red'; x=5; y=3; flower={stem: 1, petals: 5}"> -->
+        <div ng-app="testApp" ng-controller="testCtrl">
+            <p>Dynamically change the color of the input box by typing in a color!</p>
+            <input style="background-color:{{color}}" ng-model="color"></input>
+            <p>Using expressions to calculate numbers! Change values in the code to get different output</p>
+            <p>{{x}} * {{y}} = {{x * y}}</p>
+            <p>Accessing object attribute: A flower has {{ flower.petals }} petals!</p>
+        </div>
         <h1>リッキーの Blog</h1>
         <img src="./images/houtaro-oreki.jpg" alt="houtaro oreki pfp" style="width:225px;height:192px;">
 
@@ -59,9 +69,5 @@
         </table>
         <p>Referencing image from another website:</p>
         <img src="https://media.tenor.com/uukuabu4NKoAAAAd/yasuo-league-of-legends.gif">
-        <div ng-app>
-            <input type="text" ng-model="dynamicText"></input>
-            <p ng-bind="dynamicText"></p>
-        </div>
     </body>
 </html>
