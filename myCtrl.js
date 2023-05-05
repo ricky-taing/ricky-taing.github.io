@@ -5,4 +5,9 @@ app.controller("testCtrl", function($scope) {
     $scope.y = 15;
     $scope.stem = 1;
     $scope.petals = 5;
+    $scope.curAnime = [
+        {name: "Natsume Yuujinchou Shi"},
+        {name: "Slime Second Season"},
+        {name: "Oshi no Ko"}
+    ];
 });

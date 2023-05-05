@@ -1,26 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
         <title>Ricky's Blog</title>
         <link rel="icon" type="image/x-icon" href="./images/favicon-large.ico">
-        <script>
-            isJapanese = true;
-            function changeLang() {
-                if (isJapanese) {
-                    document.getElementById("blogName").innerHTML = "Ricky's Blog";
-                    document.getElementById("langBtn").innerHTML = "Change to Japanese";
-                    isJapanese = false;
-                } else {
-                    document.getElementById("blogName").innerHTML = "リッキーの Blog";
-                    document.getElementById("langBtn").innerHTML = "Change to English";
-                    isJapanese = true;
-                }
-            }
-
-            function returnTop() {
-
-            }
-        </script>
         <style>
             body {
                 background-image: url('./images/aokoaozaki.webp');
@@ -51,14 +34,33 @@
                 /* text-align: left; */
             }
         </style>
+        <script>
+            isJapanese = true;
+            function changeLang() {
+                if (isJapanese) {
+                    document.getElementById("blogName").innerHTML = "Ricky's Blog";
+                    document.getElementById("langBtn").innerHTML = "Change to Japanese";
+                    isJapanese = false;
+                } else {
+                    document.getElementById("blogName").innerHTML = "リッキーの Blog";
+                    document.getElementById("langBtn").innerHTML = "Change to English";
+                    isJapanese = true;
+                }
+            }
+
+            function returnTop() {
+
+            }
+        </script>
         <!-- src grabbed from w3schools -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
         <script src="./myApp.js"></script>
         <script src="./myCtrl.js"></script>
     </head>
-    <body>
-    <!-- <div ng-app="testApp" ng-controller="testCtrl" ng-init="color='red'; x=5; y=3; flower={stem: 1, petals: 5}"> -->
-        <div ng-app="testApp" ng-controller="testCtrl">
+
+    <body ng-app="testApp" ng-controller="testCtrl">
+        <!-- <div ng-app="testApp" ng-controller="testCtrl"> -->
+        <div>
             <p>Dynamically change the color of the input box by typing in a color!</p>
             <input style="background-color:{{color}}" ng-model="color"></input>
             <p>Using expressions to calculate numbers! Change values in the code to get different output</p>
@@ -78,9 +80,9 @@
         <a href="https://myanimelist.net/profile/Tengu201" target="_blank">MyAnimeList</a>  <br>
         <p>Currently watching:</p>
         <ol>
-            <li>Slime</li>
-            <li>Natsume Yuujinchou Second Season</li>
-            <li>Oshi no Ko</li>
+            <li ng-repeat="x in curAnime">
+                {{ x.name }}
+            </li>
         </ol>
         <a href="mailto:ricky.r.taing@gmail.com">Contact me here!</a>                       <br>
         <table style="width:34%">
@@ -94,23 +96,17 @@
             <tr>
                 <td>Youtube</td>
                 <td>Channel where I clip vtubers!</td>
-                <td>
-                    <a href="https://www.youtube.com/@tenguhololiveandvtubers6987/featured" target="_blank">Tengu [Hololive and Vtubers]</a>
-                </td>
+                <td><a href="https://www.youtube.com/@tenguhololiveandvtubers6987/featured" target="_blank">Tengu [Hololive and Vtubers]</a></td>
             </tr>
             <tr>
                 <td>Tumblr</td>
                 <td>Follow Yuzuharaa!</td>
-                <td>
-                    <a href="https://yuzuharaa.tumblr.com" target="_blank">Yuzuharaa's Tumblr</a>
-                </td>
+                <td><a href="https://yuzuharaa.tumblr.com" target="_blank">Yuzuharaa's Tumblr</a></td>
             </tr>
         </table>
         <p>Referencing image from another website:</p>
         <img src="https://media.tenor.com/uukuabu4NKoAAAAd/yasuo-league-of-legends.gif">
         <button id="langBtn" onclick="changeLang()">Change to English</button>
-        <button>
-            <a href="#blogName">Return to the top</a>
-        </button>
+        <button><a href="#blogName">Return to the top</a></button>
     </body>
 </html>
