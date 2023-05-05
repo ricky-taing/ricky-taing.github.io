@@ -3,6 +3,24 @@
     <head>
         <title>Ricky's Blog</title>
         <link rel="icon" type="image/x-icon" href="./images/favicon-large.ico">
+        <script>
+            isJapanese = true;
+            function changeLang() {
+                if (isJapanese) {
+                    document.getElementById("blogName").innerHTML = "Ricky's Blog";
+                    document.getElementById("langBtn").innerHTML = "Change to Japanese";
+                    isJapanese = false;
+                } else {
+                    document.getElementById("blogName").innerHTML = "リッキーの Blog";
+                    document.getElementById("langBtn").innerHTML = "Change to English";
+                    isJapanese = true;
+                }
+            }
+
+            function returnTop() {
+
+            }
+        </script>
         <style>
             body {
                 background-image: url('./images/aokoaozaki.webp');
@@ -20,12 +38,17 @@
             h2 {
                 color:aliceblue;
             }
-            p {
+            p, ol {
                 color:aliceblue;
             }
             table, th, td {
                 color:aliceblue;
                 border:1px solid white;
+                /* border-collapse: collapse; */
+                /* border-radius: 10px; */
+                /* border-style: ridge; */
+                border-color: #96D4D4;
+                /* text-align: left; */
             }
         </style>
         <!-- src grabbed from w3schools -->
@@ -42,7 +65,7 @@
             <p>{{x}} * {{y}} = {{x * y}}</p>
             <p>Accessing object attribute: A flower has {{ flower.petals }} petals!</p>
         </div>
-        <h1>リッキーの Blog</h1>
+        <h1 id="blogName">リッキーの Blog</h1>
         <img src="./images/houtaro-oreki.jpg" alt="houtaro oreki pfp" style="width:225px;height:192px;">
 
         <h2>Photography</h2>
@@ -51,10 +74,19 @@
 
         <h2>Anime</h2>
         <p>Check out what anime I've watched here:</p>
+        <!-- <iframe src="https://myanimelist.net/profile/Tengu201" title="myanimelist page"></iframe> -->
         <a href="https://myanimelist.net/profile/Tengu201" target="_blank">MyAnimeList</a>  <br>
+        <p>Currently watching:</p>
+        <ol>
+            <li>Slime</li>
+            <li>Natsume Yuujinchou Second Season</li>
+            <li>Oshi no Ko</li>
+        </ol>
         <a href="mailto:ricky.r.taing@gmail.com">Contact me here!</a>                       <br>
-        <table>
+        <table style="width:34%">
+            <caption>LINKTREE 🌲</caption>
             <tr>
+                <!-- <th colspan="2">Activity</th> -->
                 <th>Activity</th>
                 <th>Description</th>
                 <th>Link</th>
@@ -66,8 +98,19 @@
                     <a href="https://www.youtube.com/@tenguhololiveandvtubers6987/featured" target="_blank">Tengu [Hololive and Vtubers]</a>
                 </td>
             </tr>
+            <tr>
+                <td>Tumblr</td>
+                <td>Follow Yuzuharaa!</td>
+                <td>
+                    <a href="https://yuzuharaa.tumblr.com" target="_blank">Yuzuharaa's Tumblr</a>
+                </td>
+            </tr>
         </table>
         <p>Referencing image from another website:</p>
         <img src="https://media.tenor.com/uukuabu4NKoAAAAd/yasuo-league-of-legends.gif">
+        <button id="langBtn" onclick="changeLang()">Change to English</button>
+        <button>
+            <a href="#blogName">Return to the top</a>
+        </button>
     </body>
 </html>
