@@ -21,7 +21,7 @@
             h2 {
                 color:aliceblue;
             }
-            p, ol {
+            p, ol , div{
                 color:aliceblue;
             }
             table, th, td {
@@ -80,10 +80,14 @@
         <a href="https://myanimelist.net/profile/Tengu201" target="_blank">MyAnimeList</a>  <br>
         <p>Currently watching:</p>
         <ol>
-            <li ng-repeat="x in curAnime">
+            <li ng-repeat="x in curAnime | filter : search">
                 {{ x.name }}
             </li>
         </ol>
+        <div>
+            Search<br>
+            <input type="text" ng-model="search">
+        </div>                                                                              <br>
         <a href="mailto:ricky.r.taing@gmail.com">Contact me here!</a>                       <br>
         <table style="width:34%">
             <caption>LINKTREE 🌲</caption>
@@ -106,6 +110,8 @@
         </table>
         <p>Referencing image from another website:</p>
         <img src="https://media.tenor.com/uukuabu4NKoAAAAd/yasuo-league-of-legends.gif">
+        <!-- <p>Response from the server: {{serverRes}}</p> -->
+        <h1 style="padding-left: 1000px">{{time}}</h1>
         <button id="langBtn" onclick="changeLang()">Change to English</button>
         <button><a href="#blogName">Return to the top</a></button>
     </body>
