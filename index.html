@@ -73,21 +73,22 @@
         <h2>Photography</h2>
         <p>I like pictures of stars, northern lights, and landscapes!</p>
         <a href="https://www.flickr.com/photos/193886304@N05/" target="_blank">Flickr</a>
-
-        <h2>Anime</h2>
-        <p>Check out what anime I've watched here:</p>
-        <!-- <iframe src="https://myanimelist.net/profile/Tengu201" title="myanimelist page"></iframe> -->
-        <a href="https://myanimelist.net/profile/Tengu201" target="_blank">MyAnimeList</a>  <br>
-        <p>Currently watching:</p>
-        <ol>
-            <li ng-repeat="x in curAnime | filter : search">
-                {{ x.name }}
-            </li>
-        </ol>
-        <div>
-            Search<br>
-            <input type="text" ng-model="search">
-        </div>                                                                              <br>
+        <div style="border: 1px solid; width: 425px">
+            <h2>Anime</h2>
+            <p>Check out what anime I've watched here:</p>
+            <!-- <iframe src="https://myanimelist.net/profile/Tengu201" title="myanimelist page"></iframe> -->
+            <a href="https://myanimelist.net/profile/Tengu201" target="_blank">MyAnimeList</a>
+            <div>
+                Search<br>
+                <input type="text" ng-model="search">
+            </div>
+            <p>Currently watching:</p>
+            <ol>
+                <li ng-repeat="x in curAnime | filter : search">
+                    {{ x.name }}
+                </li>
+            </ol>
+        </div>
         <a href="mailto:ricky.r.taing@gmail.com">Contact me here!</a>                       <br>
         <table style="width:34%">
             <caption>LINKTREE 🌲</caption>
@@ -110,7 +111,7 @@
         </table>
         <p>Referencing image from another website:</p>
         <img src="https://media.tenor.com/uukuabu4NKoAAAAd/yasuo-league-of-legends.gif">
-        <!-- <p>Response from the server: {{serverRes}}</p> -->
+        <p>My favorite pokemon (grabbed from PokeAPI server): {{serverRes}}</p>
         <h1 style="padding-left: 1000px">{{time}}</h1>
         <button id="langBtn" onclick="changeLang()">Change to English</button>
         <button><a href="#blogName">Return to the top</a></button>

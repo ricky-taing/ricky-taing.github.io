@@ -1,4 +1,5 @@
 var app = angular.module("testApp", []);
+var serverPath = ""
 app.controller("testCtrl", function($scope, $http, $interval) {
     $scope.color = "red";
     $scope.x = 5;
@@ -13,9 +14,9 @@ app.controller("testCtrl", function($scope, $http, $interval) {
 
     // Testing http service
     // $http.get("./test.html").then(function (response) {
-    //     $scope.serverRes = response.data;
-    //     console.log(serverRes);
-    // })
+    $http.get("https://pokeapi.co/api/v2/pokemon/charmander").then(function (response) {
+        $scope.serverRes = response.data.name;
+    })
 
     // Dynamic Time
     $scope.time = new Date().toLocaleTimeString();
