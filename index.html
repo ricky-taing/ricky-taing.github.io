@@ -42,7 +42,7 @@
                     document.getElementById("langBtn").innerHTML = "Change to Japanese";
                     isJapanese = false;
                 } else {
-                    document.getElementById("blogName").innerHTML = "リッキーの Blog";
+                    document.getElementById("blogName").innerHTML = "リッキーのブログ";
                     document.getElementById("langBtn").innerHTML = "Change to English";
                     isJapanese = true;
                 }
@@ -67,7 +67,7 @@
             <p>{{x}} * {{y}} = {{x * y}}</p>
             <p>Accessing object attribute: A flower has {{ flower.petals }} petals!</p>
         </div>
-        <h1 id="blogName">リッキーの Blog</h1>
+        <h1 id="blogName">リッキーのブログ</h1>
         <img src="./images/houtaro-oreki.jpg" alt="houtaro oreki pfp" style="width:225px;height:192px;">
 
         <h2>Photography</h2>
@@ -112,6 +112,12 @@
         <p>Referencing image from another website:</p>
         <img src="https://media.tenor.com/uukuabu4NKoAAAAd/yasuo-league-of-legends.gif">
         <p>My favorite pokemon (grabbed from PokeAPI server): {{serverRes}}</p>
+        <table table-layout="fixed" style="width:75%" ng-repeat="a in animeData">
+            <tr>
+                <td>{{ a.name }}</td>
+                <td>{{ a.review }}</td>
+            </tr>
+        </table>
         <h1 style="padding-left: 1000px">{{time}}</h1>
         <button id="langBtn" onclick="changeLang()">Change to English</button>
         <button><a href="#blogName">Return to the top</a></button>
