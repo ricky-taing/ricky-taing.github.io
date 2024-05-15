@@ -1,0 +1,36 @@
+body {
+    background-image: url('./images/mahoyo-anime.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: blue;
+    /* background-position: center; */
+    /* position: relative; */
+}
+
+a:link, a:visited {
+    color:lightseagreen;
+}
+
+h1 {
+    color:aliceblue;
+    text-align: center;
+}
+
+h2 {
+    color:aliceblue;
+}
+
+p, ol , div{
+    color:aliceblue;
+}
+
+table, th, td {
+    color:aliceblue;
+    border:1px solid white;
+    /* border-collapse: collapse; */
+    /* border-radius: 10px; */
+    /* border-style: ridge; */
+    border-color: #96D4D4;
+    /* text-align: left; */
+}
