@@ -27,14 +27,6 @@
     </head>
 
     <body ng-app="testApp" ng-controller="testCtrl">
-        <!-- <div ng-app="testApp" ng-controller="testCtrl"> -->
-        <div>
-            <p>Dynamically change the color of the input box by typing in a color!</p>
-            <input style="background-color:{{color}}" ng-model="color"></input>
-            <p>Using expressions to calculate numbers! Change values in the code to get different output</p>
-            <p>{{x}} * {{y}} = {{x * y}}</p>
-            <p>Accessing object attribute: A flower has {{ flower.petals }} petals!</p>
-        </div>
         <h1 id="blogName">リッキーのブログ</h1>
         <img src="./images/nyanko-xmas-baro.png" alt="custom nyanko pfp" style="width:225px;height:192px;">
 
@@ -57,7 +49,12 @@
                 </li>
             </ol>
         </div>
-        <a href="mailto:ricky.r.taing@gmail.com">Contact me here!</a>                       <br>
+        <table table-layout="fixed" style="width:75%" ng-repeat="a in animeData">
+            <tr>
+                <td>{{ a.name }}</td>
+                <td>{{ a.review }}</td>
+            </tr>
+        </table>
         <table style="width:34%">
             <caption>LINKTREE 🌲</caption>
             <tr>
@@ -76,16 +73,24 @@
                 <td>Follow Yuzuharaa!</td>
                 <td><a href="https://yuzuharaa.tumblr.com" target="_blank">Yuzuharaa's Tumblr</a></td>
             </tr>
-        </table>
-        <p>Referencing image from another website:</p>
-        <img src="https://media.tenor.com/uukuabu4NKoAAAAd/yasuo-league-of-legends.gif">
-        <p>My favorite pokemon (grabbed from PokeAPI server): {{serverRes}}</p>
-        <table table-layout="fixed" style="width:75%" ng-repeat="a in animeData">
             <tr>
-                <td>{{ a.name }}</td>
-                <td>{{ a.review }}</td>
+                <td>Email</td>
+                <td>Contact me here!</td>
+                <td><a href="mailto:ricky.r.taing@gmail.com">ricky.r.taing@gmail.com</a></td>
             </tr>
         </table>
+        <h2>Testing</h2>
+        <p>Referencing image from another website:</p>
+        <img src="https://media.tenor.com/uukuabu4NKoAAAAd/yasuo-league-of-legends.gif">
+        <!-- <div ng-app="testApp" ng-controller="testCtrl"> -->
+        <div style="border: 1px solid; width: 425px">
+            <p>Dynamically change the color of the input box by typing in a color!</p>
+            <input style="background-color:{{color}}" ng-model="color"></input>
+            <p>Using expressions to calculate numbers! Change values in the code to get different output</p>
+            <p>{{x}} * {{y}} = {{x * y}}</p>
+            <p>Accessing object attribute: A flower has {{ flower.petals }} petals!</p>
+        </div>
+        <p>My favorite pokemon (grabbed from PokeAPI server): {{serverRes}}</p>
         <h1 style="padding-left: 1000px">{{time}}</h1>
         <button id="langBtn" onclick="changeLang()">Change to English</button>
         <button><a href="#blogName">Return to the top</a></button>

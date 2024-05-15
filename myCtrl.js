@@ -22,7 +22,7 @@ app.controller("testCtrl", function($scope, $http, $interval) {
         }
     ]
 
-    // Testing http service
+    // testing http service
     // $http.get("./test.html").then(function (response) {
     $http.get("https://pokeapi.co/api/v2/pokemon/charmander")
     .then(function (response) {
@@ -32,7 +32,7 @@ app.controller("testCtrl", function($scope, $http, $interval) {
         $scope.status = response.statusText;
     })
 
-    // Dynamic Time
+    // dynamic time
     $scope.time = new Date().toLocaleTimeString();
     $interval(function () {
         $scope.time = new Date().toLocaleTimeString();

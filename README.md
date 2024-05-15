@@ -10,3 +10,4 @@ Developing personal website to learn HTML, CSS, JS and apply React and Bootstrap
 
 ## Questions:
 1. Is CSS padding the best way to keep the timer in the bottom right?
+2. Do we continue using Angular, opt for another technology or remove it all together?
