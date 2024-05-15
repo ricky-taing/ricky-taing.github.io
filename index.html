@@ -22,11 +22,8 @@
         </script>
         <!-- src grabbed from w3schools -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-        <script src="./myApp.js"></script>
-        <script src="./myCtrl.js"></script>
     </head>
-
-    <body ng-app="testApp" ng-controller="testCtrl">
+    <body>
         <h1 id="blogName">リッキーのブログ</h1>
         <img src="./images/nyanko-xmas-baro.png" alt="custom nyanko pfp" style="width:225px;height:192px;">
 
@@ -38,23 +35,13 @@
             <p>Check out what anime I've watched here:</p>
             <!-- <iframe src="https://myanimelist.net/profile/Tengu201" title="myanimelist page"></iframe> -->
             <a href="https://myanimelist.net/profile/Tengu201" target="_blank">MyAnimeList</a>
-            <div>
-                Search<br>
-                <input type="text" ng-model="search">
-            </div>
             <p>Currently watching:</p>
             <ol>
-                <li ng-repeat="x in curAnime | filter : search">
-                    {{ x.name }}
-                </li>
+                <li>Natsume Yuujinchou Shi</li>
+                <li>Slime Second Season</li>
+                <li>Oshi no Ko</li>
             </ol>
         </div>
-        <table table-layout="fixed" style="width:75%" ng-repeat="a in animeData">
-            <tr>
-                <td>{{ a.name }}</td>
-                <td>{{ a.review }}</td>
-            </tr>
-        </table>
         <table style="width:34%">
             <caption>LINKTREE 🌲</caption>
             <tr>
@@ -82,14 +69,6 @@
         <h2>Testing</h2>
         <p>Referencing image from another website:</p>
         <img src="https://media.tenor.com/uukuabu4NKoAAAAd/yasuo-league-of-legends.gif">
-        <!-- <div ng-app="testApp" ng-controller="testCtrl"> -->
-        <div style="border: 1px solid; width: 425px">
-            <p>Dynamically change the color of the input box by typing in a color!</p>
-            <input style="background-color:{{color}}" ng-model="color"></input>
-            <p>Using expressions to calculate numbers! Change values in the code to get different output</p>
-            <p>{{x}} * {{y}} = {{x * y}}</p>
-            <p>Accessing object attribute: A flower has {{ flower.petals }} petals!</p>
-        </div>
         <p>My favorite pokemon (grabbed from PokeAPI server): {{serverRes}}</p>
         <h1 style="padding-left: 1000px">{{time}}</h1>
         <button id="langBtn" onclick="changeLang()">Change to English</button>
