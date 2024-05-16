@@ -1,6 +1,16 @@
-<h2>{{anime.name | uppercase}} Details</h2>
-<div><span>id: </span> {{anime.id}}</div>
+<h2>Currently Watching</h2>
+<ul class="animeList">
+    <li *ngFor="let anime of animeList">
+        <button type="button">
+            <span class="badge">{{anime.id}}. </span>
+            <span class="name">{{anime.name}}</span>
+        </button>
+    </li>
+</ul>
+
+
+<!-- <div><span>id: </span> {{anime.id}}</div>
 <div>
     <label for="name">Anime name: </label>
     <input id="name" [(ngModel)]="anime.name" placeholder="name">
-</div>
+</div> -->
