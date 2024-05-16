@@ -1,3 +1,6 @@
-<h2>{{anime.name}} Details</h2>
+<h2>{{anime.name | uppercase}} Details</h2>
 <div><span>id: </span> {{anime.id}}</div>
-<div><span>name: </span> {{anime.name}}</div>
+<div>
+    <label for="name">Anime name: </label>
+    <input id="name" [(ngModel)]="anime.name" placeholder="name">
+</div>
