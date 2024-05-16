@@ -1,16 +1,18 @@
 <h2>Currently Watching</h2>
 <ul class="animeList">
     <li *ngFor="let anime of animeList">
-        <button type="button">
+        <button [class.selected]="anime === selectedAnime" type="button" (click)="onSelect(anime)">
             <span class="badge">{{anime.id}}. </span>
             <span class="name">{{anime.name}}</span>
         </button>
     </li>
 </ul>
 
-
-<!-- <div><span>id: </span> {{anime.id}}</div>
-<div>
-    <label for="name">Anime name: </label>
-    <input id="name" [(ngModel)]="anime.name" placeholder="name">
-</div> -->
+<div *ngIf="selectedAnime">
+    <h2>{{selectedAnime.name | uppercase}} Details</h2>
+    <div>id: {{selectedAnime.id}}</div>
+    <div>
+        <label for="anime-name">Anime name: </label>
+        <input id="anime-name" [(ngModel)]="selectedAnime.name" placeholder="name">
+    </div>
+</div>
