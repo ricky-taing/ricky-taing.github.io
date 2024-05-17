@@ -10,5 +10,5 @@ import { AnimeComponent } from './anime/anime.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = "Ricky's Blog";
+  title = "リッキーのブログ";
 }
