@@ -8,7 +8,11 @@
 ## Usage
 
 ## To-Do List
-1. Can I put a border around the div at the top of the page and move elsewhere?
-2. Add HTML content to center and right side of page, not just left side
-3. Is CSS padding the best way to keep the timer in the bottom right?
-4. Do we continue using Angular, opt for another technology or remove it all together?
+1. Navbar, content layout
+2. Timer
+3. AI Chatbot
+
+## Questions
+1. ~~Do we continue using Angular, opt for another technology or remove it all together?~~
+    a. Migrate from AngularJS to Angular, replicating and improving functionality
+    b. If stil want to try React, do so on separate branch
