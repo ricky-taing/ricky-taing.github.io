@@ -11,6 +11,7 @@
 1. Navbar, content layout
 2. Timer
 3. AI Chatbot
+4. ~~Fix Change Language~~, Return To Top buttons
 
 ## Questions
 1. ~~Do we continue using Angular, opt for another technology or remove it all together?~~
