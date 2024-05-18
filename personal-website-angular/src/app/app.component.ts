@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 import { AnimeComponent } from './anime/anime.component';
 
 @Component({
@@ -10,6 +11,7 @@ import { AnimeComponent } from './anime/anime.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  constructor(private scroller: ViewportScroller) {}
   title = "Ricky's Blog";
   langBtnText = "Change to Japanese";
 
@@ -21,5 +23,9 @@ export class AppComponent {
       this.title = "Ricky's Blog";
       this.langBtnText = "Change to Japanese";
     }
+  }
+
+  returnTop(): void {
+    this.scroller.scrollToPosition([0, 0]);
   }
 }
