@@ -5,10 +5,11 @@ import {
   UpperCasePipe,
 } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Observable } from 'rxjs';
 
 import { Anime } from '../anime';
-import { ANIME_LIST } from '../anime-list';
 import { AnimeDetailComponent } from '../anime-detail/anime-detail.component';
+import { AnimeService } from '../anime.service';
 
 @Component({
   selector: 'app-anime',
@@ -19,10 +20,21 @@ import { AnimeDetailComponent } from '../anime-detail/anime-detail.component';
 })
 
 export class AnimeComponent {
-  animeList = ANIME_LIST;
+  constructor(private animeService: AnimeService) {}
+
+  // animeList: Observable<Anime[]> = new Observable;
+  animeList: Anime[]= [];
   selectedAnime?: Anime;
 
   onSelect(anime: Anime): void {
     this.selectedAnime = anime;
+  }
+
+  getAnime(): void {
+    this.animeList = this.animeService.getAnimeList();
+  }
+
+  ngOnInit(): void {
+    this.getAnime();
   }
 }
