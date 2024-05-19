@@ -8,11 +8,12 @@ import { FormsModule } from '@angular/forms';
 
 import { Anime } from '../anime';
 import { ANIME_LIST } from '../anime-list';
+import { AnimeDetailComponent } from '../anime-detail/anime-detail.component';
 
 @Component({
   selector: 'app-anime',
   standalone: true,
-  imports: [UpperCasePipe, FormsModule, NgFor, NgIf],
+  imports: [UpperCasePipe, FormsModule, NgFor, NgIf, AnimeDetailComponent],
   templateUrl: './anime.component.html',
   styleUrl: './anime.component.css'
 })

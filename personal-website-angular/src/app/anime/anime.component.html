@@ -9,11 +9,4 @@
   </li>
 </ul>
 
-<div *ngIf="selectedAnime">
-  <h2>{{selectedAnime.name | uppercase}} Details</h2>
-  <div>id: {{selectedAnime.id}}</div>
-  <div>
-    <label for="anime-name">Anime name: </label>
-    <input id="anime-name" [(ngModel)]="selectedAnime.name" placeholder="name">
-  </div>
-</div>
+<app-anime-detail [anime]="selectedAnime"></app-anime-detail>
