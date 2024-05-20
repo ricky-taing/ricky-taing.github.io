@@ -10,12 +10,8 @@ export class AnimeService {
 
   constructor() { }
 
-  // getAnimeList(): Observable<Anime[]> {
-  //   const animeList = of(ANIME_LIST);  
-  //   return animeList;
-  // }
-
-  getAnimeList(): Anime[] {
-    return ANIME_LIST;
+  getAnimeList(): Observable<Anime[]> {
+    const animeList = of(ANIME_LIST);  
+    return animeList;
   }
 }

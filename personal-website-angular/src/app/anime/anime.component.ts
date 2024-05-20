@@ -23,7 +23,7 @@ export class AnimeComponent {
   constructor(private animeService: AnimeService) {}
 
   // animeList: Observable<Anime[]> = new Observable;
-  animeList: Anime[]= [];
+  animeList: Anime[] = [];
   selectedAnime?: Anime;
 
   onSelect(anime: Anime): void {
@@ -31,7 +31,7 @@ export class AnimeComponent {
   }
 
   getAnime(): void {
-    this.animeList = this.animeService.getAnimeList();
+    this.animeService.getAnimeList().subscribe(animeList => this.animeList = animeList);
   }
 
   ngOnInit(): void {
