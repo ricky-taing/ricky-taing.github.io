@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { 
   NgFor,
   NgIf,
   UpperCasePipe,
 } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { Observable } from 'rxjs';
 
 import { Anime } from '../anime';
 import { AnimeDetailComponent } from '../anime-detail/anime-detail.component';
 import { AnimeService } from '../anime.service';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-anime',
@@ -19,15 +19,15 @@ import { AnimeService } from '../anime.service';
   styleUrl: './anime.component.css'
 })
 
-export class AnimeComponent {
-  constructor(private animeService: AnimeService) {}
+export class AnimeComponent implements OnInit {
+  constructor(private animeService: AnimeService, private messageService: MessageService) {}
 
-  // animeList: Observable<Anime[]> = new Observable;
   animeList: Anime[] = [];
   selectedAnime?: Anime;
 
   onSelect(anime: Anime): void {
     this.selectedAnime = anime;
+    this.messageService.add(`AnimeComponent: Selected anime id=${anime.id}`);
   }
 
   getAnime(): void {

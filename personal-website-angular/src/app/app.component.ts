@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import { AnimeComponent } from './anime/anime.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AnimeComponent],
+  imports: [RouterOutlet, AnimeComponent, MessagesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
