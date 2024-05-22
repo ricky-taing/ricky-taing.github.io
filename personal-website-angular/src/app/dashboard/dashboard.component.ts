@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Anime } from '../anime';
 import { AnimeService } from '../anime.service';
 import { RouterLink } from '@angular/router';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, NgFor],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
@@ -21,6 +22,6 @@ export class DashboardComponent {
 
   getAnime(): void {
     this.animeService.getAnimeList()
-      .subscribe(animeList => this.animeList = animeList.slice(1, 5));
+      .subscribe(animeList => this.animeList = animeList.slice(0, 4));
   }
 }
