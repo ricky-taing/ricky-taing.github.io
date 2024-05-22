@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterLink} from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import { AnimeComponent } from './anime/anime.component';
 import { MessagesComponent } from './messages/messages.component';
@@ -7,7 +7,7 @@ import { MessagesComponent } from './messages/messages.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, AnimeComponent, MessagesComponent],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, AnimeComponent, MessagesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
