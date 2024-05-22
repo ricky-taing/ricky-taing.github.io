@@ -8,10 +8,11 @@
 ## Usage
 
 ## To-Do List
-1. Navbar, content layout
+1. Navbar, content layout (flexible for Desktop and Mobile devices)
 2. Timer
 3. AI Chatbot
 4. ~~Fix Change Language~~, Return To Top buttons
+5. Let Angular know which parts of documentation is outdated (Tour of Heroes AppRoutingModules)
 
 ## Questions
 1. ~~Do we continue using Angular, opt for another technology or remove it all together?~~
