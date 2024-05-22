@@ -1,6 +1,6 @@
 <h2>Top Anime</h2>>
 <div class="anime-menu">
-    <a *ngFor="let anime of animeList">
+    <a *ngFor="let anime of animeList" routerLink="/detail/{{anime.id}}">
         {{anime.name}}
     </a>
 </div>

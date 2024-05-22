@@ -2,11 +2,10 @@
 <h2>Currently Watching</h2>
 <ul class="animeList">
   <li *ngFor="let anime of animeList">
-    <button [class.selected]="anime === selectedAnime" type="button" (click)="onSelect(anime)">
-      <span class="badge">{{anime.id}}. </span>
-      <span class="name">{{anime.name}}</span>
-    </button>
+    <a routerLink="/detail/{{anime.id}}">
+      <span class="badge">{{anime.id}}</span> {{anime. name}}
+    </a>
   </li>
 </ul>
 
-<app-anime-detail [anime]="selectedAnime"></app-anime-detail>
+<!-- <app-anime-detail [anime]="selectedAnime"></app-anime-detail> -->
