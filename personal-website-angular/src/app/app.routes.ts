@@ -7,5 +7,5 @@ export const routes: Routes = [
     {path: '', redirectTo: '/anime-list', pathMatch: 'full'},
     {path: 'anime-list', component: AnimeComponent},
     {path: 'top-anime', component: DashboardComponent},
-    {path: 'detail:id', component: AnimeDetailComponent},
+    {path: 'detail/:id', component: AnimeDetailComponent},
 ];

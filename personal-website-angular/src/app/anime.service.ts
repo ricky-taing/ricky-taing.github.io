@@ -11,6 +11,12 @@ export class AnimeService {
 
   constructor(private messageService: MessageService) { }
 
+  getAnime(id: number): Observable<Anime> {
+    const anime = ANIME_LIST.find(a => a.id === id)!;
+    this.messageService.add(`AnimeService: fetched anime id=${id}`)
+    return of(anime);
+  }
+  
   getAnimeList(): Observable<Anime[]> {
     const animeList = of(ANIME_LIST);
     this.messageService.add('AnimeService: fetched list of anime');
