@@ -31,4 +31,8 @@ export class AnimeDetailComponent {
   ngOnInit(): void {
     this.getAnime();
   }
+
+  goBack() {
+    this.location.back();
+  }
 }
