@@ -1,0 +1,11 @@
+<h2>Anime</h2>
+<h2>Currently Watching</h2>
+<ul class="animeList">
+  <li *ngFor="let anime of animeList">
+    <a routerLink="/detail/{{anime.id}}">
+      <span class="badge">{{anime.id}}</span> {{anime. name}}
+    </a>
+  </li>
+</ul>
+
+<!-- <app-anime-detail [anime]="selectedAnime"></app-anime-detail> -->
