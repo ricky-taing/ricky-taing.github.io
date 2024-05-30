@@ -16,8 +16,8 @@ export class AnimeService {
   
   headers = new HttpHeaders({ 'Content-Type': 'application/json'});
 
-  private animeListUrl = '/api/animeList';
-  // private animeListUrl = '/anime-list';
+  // private animeListUrl = '/api/animeList';
+  private animeListUrl = 'api/anime-list';
 
   private log(message: string) {
     this.messageService.add(`AnimeService: ${message}`);
@@ -41,9 +41,10 @@ export class AnimeService {
   
   // should be getting and returning Observable but failing?
   getAnimeList(): Observable<Anime[]> {
-    this.log('AnimeService: fetched list of anime');
-    // return this.http.get<Anime[]>(this.animeListUrl, { headers: this., responseType: 'text'})
     return this.http.get<Anime[]>(this.animeListUrl)
+  // getAnimeList(): Observable<any> {
+    // return this.http.get(this.animeListUrl)
+    // return this.http.get(this.animeListUrl, { responseType: 'text' })
     .pipe(
       tap(_ => this.log('fetched animeList')), 
       catchError(this.handleError<Anime[]>('getAnimeList', [])));
