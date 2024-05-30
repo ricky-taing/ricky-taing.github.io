@@ -16,7 +16,7 @@ export class AnimeService {
   
   headers = new HttpHeaders({ 'Content-Type': 'application/json'});
 
-  // private animeListUrl = '/api/animeList';
+  // private animeListUrl = 'anime-list';
   private animeListUrl = 'api/anime-list';
 
   private log(message: string) {

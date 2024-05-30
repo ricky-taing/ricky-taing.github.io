@@ -5,10 +5,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 // import { InMemoryDataService } from './in-memory-data.service';
 
 export const routes: Routes = [
-    {path: '', redirectTo: '/anime-list', pathMatch: 'full'},
-    // {path: 'anime-list', component: AnimeComponent},
-    {path: 'api/anime-list', component: AnimeComponent},
+    // {path: 'api/anime-list', component: AnimeComponent},
+    {path: 'anime-list', component: AnimeComponent},
     {path: 'top-anime', component: DashboardComponent},
     {path: 'detail/:id', component: AnimeDetailComponent},
-    // {path: 'api/animeList', component: AnimeComponent},
+    {path: '', redirectTo: '/anime-list', pathMatch: 'full'},
+    // {path: '', redirectTo: '/api/anime-list', pathMatch: 'full'},
 ];
