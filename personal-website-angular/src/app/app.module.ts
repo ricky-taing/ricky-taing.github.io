@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
+
+import { AppRoutingModule } from './app-routing.module';
+
+import { LoggingInterceptor } from './logging-interceptor';
+import { IronHttpInterceptor } from './iron/iron-http-interceptor';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -16,6 +20,7 @@ import { MessagesComponent } from './messages/messages.component';
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
     HttpClientModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
@@ -31,6 +36,10 @@ import { MessagesComponent } from './messages/messages.component';
     AnimeComponent,
     AnimeDetailComponent,
     MessagesComponent,
+  ],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: LoggingInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: IronHttpInterceptor, multi: true }
   ],
   bootstrap: [ AppComponent ]
 })

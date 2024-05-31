@@ -7,25 +7,26 @@ import { Anime } from './anime';
 })
 
 export class InMemoryDataService implements InMemoryDbService {
-  constructor() { }
+  // constructor() { }
 
   createDb() {
     const animeList = [
-      { id: 1, name: 'Natsume Yuujinchou Movie' },
-      { id: 2, name: 'Slime Season 2' },
-      { id: 3, name: 'Oshi no Ko' },
-      { id: 4, name: 'Kaiju No. 8' },
-      { id: 5, name: 'Konosuba Season 3' },
-      { id: 6, name: 'Demon Slayer' },
-      { id: 7, name: 'Mushoku Tensei' },
-      { id: 8, name: 'Spice and Wolf' },
-      { id: 9, name: 'Yuru Camp' },
-      { id: 10, name: 'Haikyuu Dumpster Battle' }
+      { id: 12, name: 'Natsume Yuujinchou Movie' },
+      { id: 13, name: 'Slime Season 2' },
+      { id: 14, name: 'Oshi no Ko' },
+      { id: 15, name: 'Kaiju No. 8' },
+      { id: 16, name: 'Konosuba Season 3' },
+      { id: 17, name: 'Demon Slayer' },
+      { id: 18, name: 'Mushoku Tensei' },
+      { id: 19, name: 'Spice and Wolf' },
+      { id: 20, name: 'Yuru Camp' },
+      { id: 21, name: 'Haikyuu Dumpster Battle' }
     ];
-    return {animeList};
+    return {'anime-list': animeList};
   }
 
   genId(animeList: Anime[]): number {
-    return animeList.length > 0 ? Math.max(...animeList.map(anime => anime.id)) + 1 : 1;
+    // return animeList.length > 0 ? Math.max(...animeList.map(anime => anime.id)) + 1 : 1;
+    return animeList.length > 0 ? Math.max(...animeList.map(anime => anime.id)) + 1 : 11;
   }
 }
