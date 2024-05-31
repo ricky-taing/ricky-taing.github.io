@@ -34,3 +34,7 @@ Possible Causes:
 https://github.com/angular/angular/tree/main/packages/misc/angular-in-memory-web-api
 - Intercepts HTTP requests and returns data from in-memory database
 - Remove if implementing real server or exclude from prod environment (see documentation in link above)
+
+## Logging and Iron Interceptors
+Code from @cemtopkaya on StackBlitz
+Added in attempt to fix HttpErrorResponse when using in-memory-web-api, not final
