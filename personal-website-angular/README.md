@@ -36,5 +36,5 @@ https://github.com/angular/angular/tree/main/packages/misc/angular-in-memory-web
 - Remove if implementing real server or exclude from prod environment (see documentation in link above)
 
 ## Logging and Iron Interceptors
-Code from @cemtopkaya on StackBlitz
+Code from [@cemtopkaya on StackBlitz](https://stackblitz.com/edit/angular-httpclientinmemorywebapimodule-http-interceptor?file=src%2Fapp%2Firon%2Firon-http-interceptor.ts,src%2Fapp%2Firon%2Fmock-identity-provider.service.ts)
 Added in attempt to fix HttpErrorResponse when using in-memory-web-api, not final
