@@ -12,6 +12,7 @@
 2. ~~Fix Change Language, Return To Top buttons~~
 3. Add new component: Photography, Linktree
 4. Edit Linktree
+    a. Stretch Goal: add feature to add new link, edit old links
 5. Navbar Styling - center, spacing, colors, font...
 6. AI Chatbot
 7. Timer

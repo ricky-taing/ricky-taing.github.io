@@ -1,0 +1,24 @@
+/* table { */
+table, th, td {
+    color: black;
+    background-color: white;
+    /* width: 50%; */
+    /* border:1px solid white; */
+    /* border-collapse: collapse; */
+    border-radius: 10px;
+    /* border-style: ridge; */
+    border-color: black;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+/* .mat-column-name {
+    width: 25%;
+}
+.mat-column-description {
+    width: 25%;
+} */
+.mat-column-link {
+    width: 1%;
+    white-space: nowrap;
+}
