@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import { AnimeComponent } from './anime/anime.component';
 import { MessagesComponent } from './messages/messages.component';
 import { LinktreeComponent } from './linktree/linktree.component';
@@ -8,7 +9,7 @@ import { LinktreeComponent } from './linktree/linktree.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, AnimeComponent, MessagesComponent, LinktreeComponent],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, NgOptimizedImage, AnimeComponent, MessagesComponent, LinktreeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

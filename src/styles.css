@@ -1,10 +1,10 @@
 body {
-  background-image: url('./assets/images/mahoyo-anime.jpg');
+  /* background-image: url('./assets/images/mahoyo-anime.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
   background-color: blue;
-  margin: 2em;
+  /* margin: 2em; */
   /* background-position: center; */
   /* position: relative; */
 }
