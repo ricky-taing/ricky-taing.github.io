@@ -3,21 +3,20 @@
     <table mat-table [dataSource]="dataSource">
         <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef>Name</th>    
-            <td mat-cell *matCellDef="let elem"> {{elem.name}} </td>
+            <td mat-cell *matCellDef="let elem">
+                <a [href]="elem.link" target="_blank"> {{elem.name}} </a>
+            </td>
         </ng-container>
         <ng-container matColumnDef="description">
             <th mat-header-cell *matHeaderCellDef>Description</th>    
             <td mat-cell *matCellDef="let elem"> {{elem.description}} </td>
-        </ng-container>
-        <ng-container matColumnDef="link">
-            <th mat-header-cell *matHeaderCellDef>Link</th>    
-            <td mat-cell *matCellDef="let elem"> {{elem.link}} </td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
 </div>
+
 <!-- <table style="width:34%">
     <caption>LINKTREE 🌲</caption>
     <tr>
@@ -26,18 +25,13 @@
         <th>Link</th>
     </tr>
     <tr>
-        <td>Email</td>
-        <td>Contact me here!</td>
-        <td><a href="mailto:ricky.r.taing@gmail.com">ricky.r.taing&#64;gmail.com</a></td>
-    </tr>
+        <td>Youtube</td>
+        <td>Channel where I clip vtubers!</td>
+        <td><a href="https://www.youtube.com/@tengu-translations" target="_blank">Tengu Translations</a></td>
+      </tr>
+      <tr>
+        <td>Tumblr</td>
+        <td>Follow Yuzuharaa!</td>
+        <td><a href="https://yuzuharaa.tumblr.com" target="_blank">Yuzuharaa's Tumblr</a></td>
+      </tr>
 </table> -->
-  <!-- <tr>
-    <td>Youtube</td>
-    <td>Channel where I clip vtubers!</td>
-    <td><a href="https://www.youtube.com/@tengu-translations" target="_blank">Tengu Translations</a></td>
-  </tr> -->
-  <!-- <tr>
-    <td>Tumblr</td>
-    <td>Follow Yuzuharaa!</td>
-    <td><a href="https://yuzuharaa.tumblr.com" target="_blank">Yuzuharaa's Tumblr</a></td>
-  </tr> -->
