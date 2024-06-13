@@ -10,13 +10,16 @@
 ## To-Do List
 1. ~~Navbar~~, content layout (flexible for Desktop and Mobile devices)
 2. ~~Fix Change Language, Return To Top buttons~~
-3. Add new component: Photography, Linktree
-4. Edit Linktree
-    a. Stretch Goal: add feature to add new link, edit old links
+3. ~~Add linktree component~~
+4. Add photography component, photo gallery
 5. Navbar Styling - center, spacing, colors, font...
+    a. Add About Me component, replace profile picture with NgOptimizedImage
 6. AI Chatbot
-7. Timer
-8. Incorporate real server, may require different hosting service than Github Pages 
+7. Incorporate real server, may require different hosting service than Github Pages 
+
+## Stretch Goal
+1. Linktree - Add feature to add new link, edit old links
+2. Timer
 
 ## Questions
 1. ~~Do we continue using Angular, opt for another technology or remove it all together?~~
