@@ -1,20 +1,23 @@
-<h1>{{title}}</h1>
-
-<nav>
-    <a class="button" routerLinkActive="activebutton" routerLink="/about-me">About Me</a>
-    <a class="button" routerLinkActive="activebutton" routerLink="/anime-list">Anime List</a>
-    <a class="button" routerLinkActive="activebutton" routerLink="/top-anime">Top Anime</a>
-</nav>
-
-<router-outlet></router-outlet>
-<!-- <app-photography></app-photography> -->
-<app-linktree></app-linktree>
-<!-- <app-testing></app-testing> -->
-<app-messages></app-messages>
-
-<button type="button" (click)="changeLang()">{{ langBtnText }}</button>
-<button type="button" (click)="returnTop()">Return to the Top</button>
-<div style="position: fixed;">
-    <img ngSrc="../assets/images/mahoyo-anime.jpg" style=" object-fit: cover;" fill>
+<div class="background-container">
+    <img ngSrc="../assets/images/mahoyo-anime.jpg" class="background-img" fill>
     <!-- <img ngSrc="../assets/images/mahoyo-anime.jpg" style="position: relative; object-fit: cover;" fill> -->
+
+    <div class="content">
+        <h1>{{title}}</h1>
+
+        <nav>
+        <a class="button" routerLinkActive="activebutton" routerLink="/about-me">About Me</a>
+        <a class="button" routerLinkActive="activebutton" routerLink="/anime-list">Anime List</a>
+        <a class="button" routerLinkActive="activebutton" routerLink="/top-anime">Top Anime</a>
+        </nav>
+
+        <router-outlet></router-outlet>
+        <!-- <app-photography></app-photography> -->
+        <app-linktree></app-linktree>
+        <!-- <app-testing></app-testing> -->
+        <app-messages></app-messages>
+
+        <button type="button" (click)="changeLang()">{{ langBtnText }}</button>
+        <button type="button" (click)="returnTop()">Return to the Top</button>
+    </div>
 </div>
