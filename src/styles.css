@@ -35,14 +35,18 @@ p, ol , div{
     color:aliceblue;
 }
 
-table, th, td {
-    color:aliceblue;
-    border:1px solid white;
+table {
+    background-color: white;
     /* border-collapse: collapse; */
     /* border-radius: 10px; */
     /* border-style: ridge; */
     border-color: #96D4D4;
     /* text-align: left; */
+}
+
+th, td {
+  color:black;
+  border:1px solid black;
 }
 
   button {
