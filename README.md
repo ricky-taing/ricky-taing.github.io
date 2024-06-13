@@ -13,6 +13,7 @@
 3. ~~Add linktree component~~
 4. Add photography component, photo gallery
 5. Navbar Styling - center, spacing, colors, font...
+    a. Add About Me component, replace profile picture with NgOptimizedImage
 6. AI Chatbot
 7. Incorporate real server, may require different hosting service than Github Pages 
 
