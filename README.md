@@ -26,6 +26,12 @@
     a. Migrate from AngularJS to Angular, replicating and improving functionality
     b. If stil want to try React, do so on separate ~~branch~~ repository
 
+## Citations
+Photo Gallery by Benjamin Brandmeier
+[NPM](https://www.npmjs.com/package/angular2-image-gallery)
+[Github Repo](https://github.com/BenjaminBrandmeier/angular2-image-gallery?tab=readme-ov-file)
+[Demo](https://oidamo.de/blog/gallery-demo)
+
 HTML Linktree
 Pros:
 - clickable links inside tree
