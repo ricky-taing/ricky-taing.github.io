@@ -1,1 +1,9 @@
-<p>photo-gallery works!</p>
+<gallery
+    [flexBorderSize]="3"
+    [flexImageSize]="7"
+    [galleryName]="My Photos"
+    [maxRowsPerPage]="100"
+    (viewerChange)="yourNotificationFunction($event)"
+    [includeViewer]="true"
+    [lazyLoadGalleryImages]="true"
+></gallery>
