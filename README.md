@@ -22,9 +22,9 @@
 2. Timer
 
 ## Questions
-1. ~~Do we continue using Angular, opt for another technology or remove it all together?~~
-    a. Migrate from AngularJS to Angular, replicating and improving functionality
-    b. If stil want to try React, do so on separate ~~branch~~ repository
+1. ~~Do we continue using Angular, opt for another technology or remove it all together?~~  
+    a. Migrate from AngularJS to Angular, replicating and improving functionality  
+    b. If still want to try React, do so on separate ~~branch~~ repository
 
 ## Citations
 Photo Gallery by Benjamin Brandmeier
