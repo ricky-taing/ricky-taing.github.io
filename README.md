@@ -32,16 +32,18 @@ Photo Gallery by Benjamin Brandmeier
 [Github Repo](https://github.com/BenjaminBrandmeier/angular2-image-gallery?tab=readme-ov-file)
 [Demo](https://oidamo.de/blog/gallery-demo)
 
-HTML Linktree
+HTML Linktree  
 Pros:
-- clickable links inside tree
+- clickable links inside tree  
+
 Cons:
 - have to restart app every time make a change
 - doesn't work well with components e.g. the HTML table is always below components
 
-Component Linktree
+Component Linktree  
 Pros:
 - works well with other components, can easily change layout
-- don't have to restart app every time make a change
-Con:
+- don't have to restart app every time make a change  
+
+Cons:
 - no clickable links, only display data?
