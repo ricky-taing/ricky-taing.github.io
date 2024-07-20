@@ -1,10 +1,8 @@
-body {
-  background-color: black;
-}
-
 body, input[type="text"], button {
+  background-color: white;
   color: #333;
-  font-family: Cambria, Georgia, serif;
+  /* font-family: Cambria, Georgia, serif; */
+  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 a:link, a:visited {
@@ -12,20 +10,21 @@ a:link, a:visited {
 }
 
 h1 {
-  color:aliceblue;
+  /* color:aliceblue; */
+  color: orange;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
 
 h2, h3 {
-  color:aliceblue;
-  font-family: Arial, Helvetica, sans-serif;
+  /* color:aliceblue; */
+  color: black;
   font-weight: lighter;
 }
 
 p, ol , div{
-  color:aliceblue;
+  /* color:aliceblue; */
+  color: black;
 }
   
 button {
@@ -50,10 +49,18 @@ button:disabled {
   cursor: auto;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+  height: 100%;
+}
+
+body { 
+  margin: 0;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
+}
   
-  /* everywhere else */
-  * {
-    font-family: Arial, Helvetica, sans-serif;
-  }
+/* everywhere else */
+* {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
+}

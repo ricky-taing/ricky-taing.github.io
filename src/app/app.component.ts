@@ -15,15 +15,15 @@ import { LinktreeComponent } from './linktree/linktree.component';
 })
 export class AppComponent {
   constructor(private scroller: ViewportScroller) {}
-  title = "Ricky's Blog";
+  title = "Ricky Taing";
   langBtnText = "Change to Japanese";
 
   changeLang(): void {
-    if (this.title === "Ricky's Blog") {
-      this.title= "リッキーのブログ";
+    if (this.title === "Ricky Taing") {
+      this.title= "リッキー";
       this.langBtnText = "Change to English";
     } else {
-      this.title = "Ricky's Blog";
+      this.title = "Ricky Taing";
       this.langBtnText = "Change to Japanese";
     }
   }
