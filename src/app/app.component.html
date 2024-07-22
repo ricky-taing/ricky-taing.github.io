@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="background-container">
     <!-- <img ngSrc="../assets/images/mahoyo-anime.jpg" alt="background-mahoyo" class="background-img" fill> -->
     <!-- <img ngSrc="../assets/photo-gallery/fireworks.jpeg" alt="background-fireworks" class="background-img" fill> -->
@@ -18,7 +19,11 @@
         <!-- <app-testing></app-testing> -->
         <!-- <app-messages></app-messages> -->
 
-        <button type="button" (click)="changeLang()">{{ langBtnText }}</button>
-        <button type="button" (click)="returnTop()">Return to the Top</button>
+        <button type="button" (click)="changeLang()">
+            <i class="fa fa-language"></i> {{ langBtnText }}
+        </button>
+        <button type="button" (click)="returnTop()">
+            <i class="fa fa-arrow-up"></i>
+        </button>
     </div>
 </div>
