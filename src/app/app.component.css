@@ -15,8 +15,19 @@
     padding: 20px;
 }
 
+h1 {
+    float: left;
+}
+
 nav {
-    text-align: center;
+    /* text-align: center; */
+    float: right;
+}
+
+router-outlet::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 a+a {
