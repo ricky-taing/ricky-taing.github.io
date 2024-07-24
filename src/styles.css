@@ -9,38 +9,36 @@ a:link, a:visited {
 }
 
 h1 {
-  /* color:aliceblue; */
   color: orange;
   text-align: center;
   font-size: 250%;
 }
 
 h2, h3 {
-  /* color:aliceblue; */
   color: black;
   font-weight: lighter;
 }
 
 p, ol , div{
-  /* color:aliceblue; */
   color: black;
 }
   
 button {
-  background-color: #eee;
+  background-color: black;
   border: none;
-  border-radius: 4px;
+  border-radius: 50% 50% 50% 50%;
   cursor: pointer;
-  color: black;
+  color: white;
   font-size: 1.2rem;
   padding: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  float: right;
 }
 button:hover {
-  background-color: black;
-  color: white;
+  background-color:orange;
+  color: black;
 }
 button:disabled {
   background-color: #eee;
