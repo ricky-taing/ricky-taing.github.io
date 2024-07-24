@@ -1,11 +1,11 @@
 <div class="background-container">
     <!-- <img ngSrc="../assets/images/mahoyo-anime.jpg" alt="background-mahoyo" class="background-img" fill> -->
-    <img ngSrc="../assets/photo-gallery/fireworks.jpeg" alt="background-fireworks" class="background-img" fill>
-
+    <!-- <img ngSrc="../assets/photo-gallery/fireworks.jpeg" alt="background-fireworks" class="background-img" fill> -->
+    
     <div class="content">
         <h1>{{title}}</h1>
-
         <nav>
+            <!-- <a class="button" routerLinkActive="activebutton" routerLink="/about-me">Home</a> -->
             <a class="button" routerLinkActive="activebutton" routerLink="/about-me">About Me</a>
             <a class="button" routerLinkActive="activebutton" routerLink="/anime-list">Anime List</a>
             <a class="button" routerLinkActive="activebutton" routerLink="/top-anime">Top Anime</a>
@@ -16,9 +16,14 @@
         <!-- <app-photography></app-photography> -->
         <app-linktree></app-linktree>
         <!-- <app-testing></app-testing> -->
-        <app-messages></app-messages>
+        <!-- <app-messages></app-messages> -->
 
-        <button type="button" (click)="changeLang()">{{ langBtnText }}</button>
-        <button type="button" (click)="returnTop()">Return to the Top</button>
+        <button type="button" (click)="changeLang()">
+            <!-- <i class="fa fa-language"></i> {{ langBtnText }} -->
+            <i class="fa fa-language"></i>
+        </button>
+        <button type="button" (click)="returnTop()">
+            <i class="fa fa-arrow-up"></i>
+        </button>
     </div>
 </div>

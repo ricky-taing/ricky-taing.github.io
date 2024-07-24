@@ -1,10 +1,7 @@
-body {
-  background-color: black;
-}
-
 body, input[type="text"], button {
+  background-color: white;
   color: #333;
-  font-family: Cambria, Georgia, serif;
+  /* font-family: Cambria, Georgia, serif; */
 }
 
 a:link, a:visited {
@@ -12,37 +9,36 @@ a:link, a:visited {
 }
 
 h1 {
-  color:aliceblue;
+  color: orange;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
 
 h2, h3 {
-  color:aliceblue;
-  font-family: Arial, Helvetica, sans-serif;
+  color: black;
   font-weight: lighter;
 }
 
 p, ol , div{
-  color:aliceblue;
+  color: black;
 }
   
 button {
-  background-color: #eee;
+  background-color: black;
   border: none;
-  border-radius: 4px;
+  border-radius: 50% 50% 50% 50%;
   cursor: pointer;
-  color: black;
+  color: white;
   font-size: 1.2rem;
   padding: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  float: right;
 }
 button:hover {
-  background-color: black;
-  color: white;
+  background-color:orange;
+  color: black;
 }
 button:disabled {
   background-color: #eee;
@@ -50,10 +46,18 @@ button:disabled {
   cursor: auto;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+  height: 100%;
+}
+
+body { 
+  margin: 0;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
+}
   
-  /* everywhere else */
-  * {
-    font-family: Arial, Helvetica, sans-serif;
-  }
+/* everywhere else */
+* {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
+}
