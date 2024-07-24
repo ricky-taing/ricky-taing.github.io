@@ -6,10 +6,12 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 
 export const routes: Routes = [
+    // {path: 'home', component: HomeComponent},
     {path: 'anime-list', component: AnimeComponent},
     {path: 'top-anime', component: DashboardComponent},
     {path: 'detail/:id', component: AnimeDetailComponent},
     {path: 'about-me', component: AboutMeComponent},
     {path: 'photo-gallery', component: PhotoGalleryComponent},
-    {path: '', redirectTo: '/anime-list', pathMatch: 'full'},
+    {path: '', redirectTo: '/about-me', pathMatch: 'full'},
+    // {path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
