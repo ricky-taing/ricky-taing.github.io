@@ -14,6 +14,13 @@ th, td {
     border:1px solid black;
 }
 
+a:link{
+    color:lightseagreen;
+}
+a:visited {
+color:purple;
+}
+
 .mat-table-container {
     max-width: 600px;
     margin: 0 auto;

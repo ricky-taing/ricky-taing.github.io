@@ -19,12 +19,12 @@
         <!-- <app-messages></app-messages> -->
 
         <div class="menu">
-            <i class="fa fa-bars"></i>
+            <button type="button">
+                <i class="fa fa-bars"></i>
+            </button>
             <div class="menu-content">
-                <button type="button" (click)="changeLang()">
-                    <!-- <i class="fa fa-language"></i> {{ langBtnText }} -->
-                    <i class="fa fa-language"></i>
-                </button>
+                <a (click)="changeLang()"><i class="fa fa-language"></i> Language</a><br>
+                <a><i class="fa fa-cog"></i> Settings</a>
             </div>
         </div>
         <button type="button" (click)="returnTop()">

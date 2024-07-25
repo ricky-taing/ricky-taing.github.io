@@ -17,6 +17,8 @@
 
 h1 {
     float: left;
+    color: orange;
+    font-size: 250%;
 }
 
 nav {
