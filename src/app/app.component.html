@@ -18,10 +18,15 @@
         <!-- <app-testing></app-testing> -->
         <!-- <app-messages></app-messages> -->
 
-        <button type="button" (click)="changeLang()">
-            <!-- <i class="fa fa-language"></i> {{ langBtnText }} -->
-            <i class="fa fa-language"></i>
-        </button>
+        <div class="menu">
+            <i class="fa fa-bars"></i>
+            <div class="menu-content">
+                <button type="button" (click)="changeLang()">
+                    <!-- <i class="fa fa-language"></i> {{ langBtnText }} -->
+                    <i class="fa fa-language"></i>
+                </button>
+            </div>
+        </div>
         <button type="button" (click)="returnTop()">
             <i class="fa fa-arrow-up"></i>
         </button>

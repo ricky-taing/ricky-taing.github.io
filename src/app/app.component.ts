@@ -19,11 +19,11 @@ export class AppComponent {
   // langBtnText = "Japanese Title";
 
   changeLang(): void {
-    if (this.title === "Ricky Taing") {
+    if (this.title === "RICKY TAING") {
       this.title= "リッキー";
       // this.langBtnText = "English Title";
     } else {
-      this.title = "Ricky Taing";
+      this.title = "RICKY TAING";
       // this.langBtnText = "Japanese Title";
     }
   }

@@ -22,8 +22,8 @@ h2, h3 {
 p, ol , div{
   color: black;
 }
-  
-button {
+
+button{
   background-color: black;
   border: none;
   border-radius: 50% 50% 50% 50%;
@@ -36,14 +36,44 @@ button {
   margin-top: 1rem;
   float: right;
 }
-button:hover {
+button:hover{
   background-color:orange;
   color: black;
 }
-button:disabled {
+/* button:disabled{
   background-color: #eee;
   color: #aaa;
   cursor: auto;
+} */
+
+.menu {
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  border: none;
+  border-radius: 50% 50% 50% 50%;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  float: right;
+}
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.menu:hover .menu-content{
+  background-color:orange;
+  color: black;
+  display: block;
 }
 
 html, body { 
