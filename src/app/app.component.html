@@ -18,17 +18,13 @@
         <!-- <app-testing></app-testing> -->
         <!-- <app-messages></app-messages> -->
 
+        <button type="button" class="menu-btn" (click)="returnTop()"><i class="fa fa-arrow-up"></i></button>
         <div class="menu">
-            <button type="button" class="menu-btn">
-                <i class="fa fa-bars"></i>
-            </button>
+            <button type="button" class="menu-btn"><i class="fa fa-bars"></i></button>
             <div class="menu-content">
                 <a (click)="changeLang()"><i class="fa fa-language"></i> Language</a><br>
                 <a><i class="fa fa-cog"></i> Settings</a>
             </div>
         </div>
-        <button type="button" class="menu-btn" (click)="returnTop()">
-            <i class="fa fa-arrow-up"></i>
-        </button>
     </div>
 </div>
