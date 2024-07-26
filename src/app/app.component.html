@@ -6,10 +6,10 @@
         <h1>{{title}}</h1>
         <nav>
             <!-- <a class="button" routerLinkActive="activebutton" routerLink="/about-me">Home</a> -->
-            <a class="button" routerLinkActive="activebutton" routerLink="/about-me">About Me</a>
-            <a class="button" routerLinkActive="activebutton" routerLink="/anime-list">Anime List</a>
-            <a class="button" routerLinkActive="activebutton" routerLink="/top-anime">Top Anime</a>
-            <a class="button" routerLinkActive="activebutton" routerLink="/photo-gallery">Photography</a>
+            <a class="nav-btn" routerLinkActive="active-nav-btn" routerLink="/about-me">About Me</a>
+            <a class="nav-btn" routerLinkActive="active-nav-btn" routerLink="/anime-list">Anime List</a>
+            <a class="nav-btn" routerLinkActive="active-nav-btn" routerLink="/top-anime">Top Anime</a>
+            <a class="nav-btn" routerLinkActive="active-nav-btn" routerLink="/photo-gallery">Photography</a>
         </nav>
 
         <router-outlet></router-outlet>
@@ -19,7 +19,7 @@
         <!-- <app-messages></app-messages> -->
 
         <div class="menu">
-            <button type="button">
+            <button type="button" class="menu-btn">
                 <i class="fa fa-bars"></i>
             </button>
             <div class="menu-content">
@@ -27,7 +27,7 @@
                 <a><i class="fa fa-cog"></i> Settings</a>
             </div>
         </div>
-        <button type="button" (click)="returnTop()">
+        <button type="button" class="menu-btn" (click)="returnTop()">
             <i class="fa fa-arrow-up"></i>
         </button>
     </div>
