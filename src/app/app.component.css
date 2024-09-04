@@ -89,8 +89,8 @@ a+a {
     z-index: 1;
 }
 .menu:hover .menu-content{
-    background-color:black;
-    color:white;
+    background-color:white;
+    color:black;
     display: block;
 }
 
