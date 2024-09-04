@@ -1,63 +1,16 @@
-body, input[type="text"], button {
+/* body, input[type="text"], button { */
+body, input[type="text"] {
   background-color: white;
   color: #333;
-  /* font-family: Cambria, Georgia, serif; */
 }
-
-a:link, a:visited {
-  color:lightseagreen;
-}
-
-h1 {
-  color: orange;
-  text-align: center;
-  font-size: 250%;
-}
-
-h2, h3 {
-  color: black;
-  font-weight: lighter;
-}
-
-p, ol , div{
-  color: black;
-}
-  
-button {
-  background-color: black;
-  border: none;
-  border-radius: 50% 50% 50% 50%;
-  cursor: pointer;
-  color: white;
-  font-size: 1.2rem;
-  padding: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  float: right;
-}
-button:hover {
-  background-color:orange;
-  color: black;
-}
-button:disabled {
-  background-color: #eee;
-  color: #aaa;
-  cursor: auto;
-}
-
-html, body { 
+body, html { 
   height: 100%;
 }
-
 body { 
   margin: 0;
-  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
   font-family: 'Courier New', Courier, monospace;
 }
   
-/* everywhere else */
 * {
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: 'Courier New', Courier, monospace;
 }
